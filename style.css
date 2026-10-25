@@ -161,3 +161,6 @@ section{padding:110px 0}
   .page-hero{padding:140px 0 40px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* Подпись автора */
+.footer-author{margin-top:10px;font-size:14px;color:var(--text)}
+.footer-author span{color:var(--accent2)}
