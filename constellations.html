@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Созвездия – NOCTURNE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%238b7bff'/></svg>">
+<link rel="stylesheet" href="style.css">
+<!-- ===== СЮДА КОД SBER ADS ===== -->
+
+<!-- ===== СЮДА КОД MYTRACKER ===== -->
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="constellations.html">Созвездия</a></li>
+      <li><a href="planets.html">Планеты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="quiz.html">Тест</a></li>
+      <li><a href="club.html">Клуб</a></li>
+    </ul>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag reveal">Атлас</span>
+      <h1 class="reveal">Созвездия <span class="gradient-text">северного неба</span></h1>
+      <p class="reveal">Девять фигур, которые можно найти даже из окна городской квартиры. Выбери сезон – и мы покажем, что искать.</p>
+    </div>
+  </section>
+  <section class="pt0">
+    <div class="container">
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="year">Круглый год</button>
+        <button class="filter" data-filter="winter">Зима</button>
+        <button class="filter" data-filter="spring">Весна</button>
+        <button class="filter" data-filter="summer">Лето</button>
+        <button class="filter" data-filter="autumn">Осень</button>
+      </div>
+      <div class="grid grid-3">
+        <article class="card const-card reveal" data-season="year">
+          <canvas data-shape="ursa"></canvas><h3>Большая Медведица</h3>
+          <p>Семь звезд ковша видны в средней полосе круглый год. Рядом со средней звездой ручки, Мицаром, заметна тусклая Алькор – древняя проверка зрения.</p>
+          <div class="meta"><span class="pill">Круглый год</span><span class="pill">Мицар и Алькор</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="year autumn">
+          <canvas data-shape="cass"></canvas><h3>Кассиопея</h3>
+          <p>Буква W напротив ковша Большой Медведицы, по другую сторону от Полярной звезды. Осенью стоит почти над головой.</p>
+          <div class="meta"><span class="pill">Круглый год</span><span class="pill">Форма W</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="winter">
+          <canvas data-shape="orion"></canvas><h3>Орион</h3>
+          <p>Самое узнаваемое зимнее созвездие. Под поясом из трех звезд светится туманность Ориона – звездная колыбель на расстоянии около 1300 световых лет.</p>
+          <div class="meta"><span class="pill">Зима</span><span class="pill">Бетельгейзе, Ригель</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="spring">
+          <canvas data-shape="leo"></canvas><h3>Лев</h3>
+          <p>Голова льва похожа на перевернутый вопросительный знак, его называют Серпом. Отсюда в ноябре вылетают Леониды.</p>
+          <div class="meta"><span class="pill">Весна</span><span class="pill">Регул</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="summer">
+          <canvas data-shape="lyra"></canvas><h3>Лира</h3>
+          <p>Маленькое созвездие с яркой голубоватой Вегой. Вега, Денеб и Альтаир вместе образуют Летне-осенний треугольник.</p>
+          <div class="meta"><span class="pill">Лето</span><span class="pill">Вега</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="summer autumn">
+          <canvas data-shape="cygnus"></canvas><h3>Лебедь</h3>
+          <p>Северный крест, летящий вдоль Млечного Пути. Звезда Альбирео в телескопе распадается на золотую и голубую пару.</p>
+          <div class="meta"><span class="pill">Лето</span><span class="pill">Денеб</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="summer">
+          <canvas data-shape="scorpius"></canvas><h3>Скорпион</h3>
+          <p>В средней полосе поднимается невысоко над южным горизонтом. Его сердце – красный сверхгигант Антарес.</p>
+          <div class="meta"><span class="pill">Лето</span><span class="pill">Антарес</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="autumn winter">
+          <canvas data-shape="perseus"></canvas><h3>Персей</h3>
+          <p>Здесь живет Алголь – звезда, которая тускнеет каждые 2,87 суток. Из этой области неба летят августовские Персеиды.</p>
+          <div class="meta"><span class="pill">Осень</span><span class="pill">Алголь</span></div>
+        </article>
+        <article class="card const-card reveal" data-season="autumn">
+          <canvas data-shape="andromeda"></canvas><h3>Андромеда</h3>
+          <p>Рядом с цепочкой звезд прячется галактика Андромеды – самый далекий объект, видимый глазом. До нее около 2,5 млн световых лет.</p>
+          <div class="meta"><span class="pill">Осень</span><span class="pill">Галактика M31</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="pt0">
+    <div class="container">
+      <div class="card reveal" style="text-align:center;padding:60px 30px">
+        <span class="tag">Проверь себя</span>
+        <h2 style="font-size:clamp(26px,3.5vw,40px);margin-bottom:16px">А какое созвездие – ты?</h2>
+        <p style="max-width:520px;margin:0 auto 28px">Пять вопросов и одна минута времени.</p>
+        <a href="quiz.html" class="btn btn-primary" data-goal="const_to_quiz">Пройти тест</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+        <p class="footer-text">Гид по ночному небу. Учебный проект по дисциплине "Веб-аналитика", Московский Политех, 2026.</p>
+      </div>
+      <div class="counters">
+        <!-- ===== СЮДА КОД LIVEINTERNET ===== -->
+
+        <div id="top100_widget"></div>
+      </div>
+    </div>
+    <p class="copy">© 2026 NOCTURNE. Смотри наверх чаще.</p>
+  </div>
+</footer>
+<canvas id="sky"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
