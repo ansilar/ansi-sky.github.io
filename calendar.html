@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Календарь неба – NOCTURNE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%238b7bff'/></svg>">
+<link rel="stylesheet" href="style.css">
+<!-- ===== СЮДА КОД SBER ADS ===== -->
+
+<!-- ===== СЮДА КОД MYTRACKER ===== -->
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="constellations.html">Созвездия</a></li>
+      <li><a href="planets.html">Планеты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="quiz.html">Тест</a></li>
+      <li><a href="club.html">Клуб</a></li>
+    </ul>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag reveal">Сезон 2026–2027</span>
+      <h1 class="reveal">Календарь <span class="gradient-text">неба</span></h1>
+      <p class="reveal">Метеорные потоки и затмения, ради которых стоит не ложиться спать.</p>
+      <div class="card next-card reveal">
+        <span class="tag">Ближайшее событие</span>
+        <h3 id="next-name">Загружаем...</h3>
+        <div class="countdown" id="countdown">
+          <div><b>00</b><span>дней</span></div>
+          <div><b>00</b><span>часов</span></div>
+          <div><b>00</b><span>минут</span></div>
+          <div><b>00</b><span>секунд</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt0">
+    <div class="container two-col">
+      <div class="timeline">
+        <article class="card event reveal" data-date="2026-10-21"><div class="date">21–22 октября 2026</div><h3>Ориониды</h3><p>Осколки кометы Галлея. До 20 метеоров в час, лучшее время – после полуночи.</p></article>
+        <article class="card event reveal" data-date="2026-11-17"><div class="date">17–18 ноября 2026</div><h3>Леониды</h3><p>Самые быстрые метеоры года – около 70 км/с. Радиант находится в созвездии Льва.</p></article>
+        <article class="card event reveal" data-date="2026-12-13"><div class="date">13–14 декабря 2026</div><h3>Геминиды</h3><p>Самый щедрый поток года: до 120 метеоров в час. Начинаются уже вечером.</p></article>
+        <article class="card event reveal" data-date="2026-12-22"><div class="date">22 декабря 2026</div><h3>Урсиды</h3><p>Скромный предновогодний поток из области Малой Медведицы. Хороший повод для прогулки в самую длинную ночь.</p></article>
+        <article class="card event reveal" data-date="2027-01-03"><div class="date">3–4 января 2027</div><h3>Квадрантиды</h3><p>Короткий, но мощный пик. Поток назван в честь исчезнувшего созвездия Стенной Квадрант.</p></article>
+        <article class="card event reveal" data-date="2027-02-06"><div class="date">6 февраля 2027</div><h3>Кольцеобразное солнечное затмение</h3><p>Луна закроет Солнце не полностью и оставит огненное кольцо. Видно в Южной Америке и Африке.</p></article>
+        <article class="card event reveal" data-date="2027-04-22"><div class="date">22 апреля 2027</div><h3>Лириды</h3><p>Один из древнейших известных потоков: его наблюдают уже около 2700 лет.</p></article>
+        <article class="card event reveal" data-date="2027-08-02"><div class="date">2 августа 2027</div><h3>Полное солнечное затмение</h3><p>Одно из самых длинных затмений века, в Египте полная фаза продлится более 6 минут.</p></article>
+        <article class="card event reveal" data-date="2027-08-12"><div class="date">12–13 августа 2027</div><h3>Персеиды</h3><p>Самый любимый поток наблюдателей: теплые ночи и до 100 метеоров в час.</p></article>
+      </div>
+      <div class="card reveal" style="position:sticky;top:100px">
+        <span class="tag">Чек-лист</span>
+        <h3>Как подготовиться к ночи наблюдений</h3>
+        <p style="margin-top:12px">Уезжай подальше от городских фонарей хотя бы на 30–40 км. Возьми теплую одежду, даже если днем было тепло, и термос с чаем.</p>
+        <p style="margin-top:12px">Ложись на коврик и смотри в зенит. Для метеоров телескоп не нужен, у глаз самое широкое поле зрения.</p>
+        <div class="btns" style="margin-top:24px"><a href="club.html" class="btn btn-primary" data-goal="calendar_to_club">Поехать с клубом</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+        <p class="footer-text">Гид по ночному небу. Учебный проект по дисциплине "Веб-аналитика", Московский Политех, 2026.</p>
+      </div>
+      <div class="counters">
+        <!-- ===== СЮДА КОД LIVEINTERNET ===== -->
+
+        <div id="top100_widget"></div>
+      </div>
+    </div>
+    <p class="copy">© 2026 NOCTURNE. Смотри наверх чаще.</p>
+  </div>
+</footer>
+<canvas id="sky"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
