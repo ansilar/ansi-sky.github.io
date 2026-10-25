@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Клуб наблюдателей – NOCTURNE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%238b7bff'/></svg>">
+<link rel="stylesheet" href="style.css">
+<!-- ===== СЮДА КОД SBER ADS ===== -->
+
+<!-- ===== СЮДА КОД MYTRACKER ===== -->
+
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="constellations.html">Созвездия</a></li>
+      <li><a href="planets.html">Планеты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="quiz.html">Тест</a></li>
+      <li><a href="club.html">Клуб</a></li>
+    </ul>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag reveal">Клуб наблюдателей</span>
+      <h1 class="reveal">Ночь, поле и <span class="gradient-text">миллион звезд</span></h1>
+      <p class="reveal">Раз в месяц мы уезжаем из города туда, где виден Млечный Путь. Опыт не нужен – нужно только желание смотреть наверх.</p>
+    </div>
+  </section>
+  <section class="pt0">
+    <div class="container two-col">
+      <div class="grid">
+        <div class="card reveal"><div class="num"><span>01</span><span>✦</span></div><h3>Выезды за город</h3><p>Трансфер от метро до площадки без засветки и обратно утром.</p></div>
+        <div class="card reveal"><div class="num"><span>02</span><span>✦</span></div><h3>Телескопы и гид</h3><p>Покажем кольца Сатурна, кратеры Луны и галактику Андромеды. Расскажем, как найти их самостоятельно.</p></div>
+        <div class="card reveal"><div class="num"><span>03</span><span>✦</span></div><h3>Лекции в городе</h3><p>В облачные месяцы собираемся на лекции о черных дырах, экзопланетах и астрофотографии.</p></div>
+      </div>
+      <form id="club-form" class="form card reveal">
+        <h3>Записаться на выезд</h3>
+        <div><label for="name">Имя</label><input id="name" required placeholder="Как к тебе обращаться"></div>
+        <div><label for="contact">Telegram или e-mail</label><input id="contact" required placeholder="@nickname"></div>
+        <div><label for="level">Опыт наблюдений</label>
+          <select id="level"><option>Только начинаю</option><option>Иногда смотрю на небо</option><option>Есть бинокль или телескоп</option></select></div>
+        <div><label for="trip">Какой выезд интересен</label>
+          <select id="trip"><option>Леониды, 17–18 ноября</option><option>Геминиды, 13–14 декабря</option><option>Квадрантиды, 3–4 января</option></select></div>
+        <div><label for="msg">Комментарий</label><textarea id="msg" rows="3" placeholder="Вопросы, пожелания"></textarea></div>
+        <button class="btn btn-primary" type="submit">Записаться</button>
+        <p class="note">Учебный проект. Данные формы никуда не отправляются и не сохраняются.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-dot"></span>NOCTURNE</a>
+        <p class="footer-text">Гид по ночному небу. Учебный проект по дисциплине "Веб-аналитика", Московский Политех, 2026.</p>
+      </div>
+      <div class="counters">
+        <!-- ===== СЮДА КОД LIVEINTERNET ===== -->
+
+        <div id="top100_widget"></div>
+      </div>
+    </div>
+    <p class="copy">© 2026 NOCTURNE. Смотри наверх чаще.</p>
+  </div>
+</footer>
+<canvas id="sky"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
