@@ -1,7 +1,7 @@
 /* NOCTURNE – общий скрипт сайта */
 
-/* 1. Впишите ID счетчика MyTracker между кавычками, например '3591234' */
-const MYTRACKER_ID = '';
+/* 1.  ID счетчика MyTracker */
+const MYTRACKER_ID = '3808981';
 
 /* 2. Отправка целей и событий в системы аналитики */
 function trackGoal(name) {
